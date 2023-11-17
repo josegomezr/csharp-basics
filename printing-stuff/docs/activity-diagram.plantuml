@@ -1,0 +1,33 @@
+@startuml
+start
+' This is a bit too verbose, but there's pretty much nothing exiting happening
+' and I wanna fill up a diagram in all honesty so... deal with it.
+
+partition "First Example" {
+    :Allocate Variables (a string);
+    :Write "Hello, World!" to the standard output;
+}
+
+partition "Second Example" {
+    :Allocate Variables (a string & chars);
+    :Write "Marco" to the standard output;
+    note
+        It looks like it'd print more, but nope..
+    end note
+    :Write "Marco... Polo" to the standard output;
+    :Write "Marco... Polo" to the standard output but more ridiculous.;
+}
+
+partition "Third Example" {
+    :Allocate Variables (an integer, a float & a double);
+    '... walk into a bar
+    :Write int;
+    :Write float;
+    :Write double;
+    :Write hex;
+    :Write percent;
+    :Write scientific notation;
+    :Write currency (us-only.);
+}
+end
+@enduml

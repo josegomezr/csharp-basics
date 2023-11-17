@@ -1,0 +1,20 @@
+@startuml
+start
+
+:Ask a question;
+
+:Read user input;
+
+if (could read input?) then (no, Console could not be read)
+    end
+else (yes)
+endif
+
+if (user input is: apple, banana or orange) then (yes)
+    :Write "Just like I said";
+else (no)
+    :Write "What's that!!??";
+endif
+
+end
+@enduml

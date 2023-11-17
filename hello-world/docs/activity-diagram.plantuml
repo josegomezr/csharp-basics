@@ -1,0 +1,5 @@
+@startuml
+start
+:Write "Hello, World!" to the standard output;
+end
+@enduml
