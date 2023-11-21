@@ -22,8 +22,10 @@ bash tools/refresh-diagrams.bash
 1. [Hello World][program-hello-world]
 2. [Printing stuff][program-printing-stuff]
 3. [Reading from Console][reading-from-console]
+3. [Arrays and List][array-and-lists]
 
 [dotnet-opensuse]: https://learn.microsoft.com/en-us/dotnet/core/install/linux-opensuse
 [program-hello-world]: ./hello-world
 [program-printing-stuff]: ./printing-stuff
 [reading-from-console]: ./reading-from-console
+[array-and-lists]: ./array-and-lists

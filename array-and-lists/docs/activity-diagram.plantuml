@@ -1,0 +1,51 @@
+@startuml
+start
+
+:define "measurements" and "avg";
+
+while (there is a measure in measurements) is (yes)
+    note right
+        Note 1: "measure" is a temporary variable.
+        it only exist within the braces of this loop.
+    end note
+    :add "measure" to "avg";
+endwhile
+->no;
+
+:divide "avg" over size of "measurements";
+:print The average of all measurements is "avg";
+
+:resize measurements by 1;
+:set last element of measurements to 999;
+
+while (there is a measure in measurements) is (yes)
+    note left
+        See Note 1.
+    end note
+    :print "measure";
+endwhile
+->no;
+
+:define "growing_measurements";
+
+while (there is a measure in measurements) is (yes)
+    note left
+        See Note 1.
+    end note
+    :add "measure" to "growing_measurements";
+endwhile
+->no;
+
+:add "63" to "growing_measurements";
+:add "9009" to "growing_measurements";
+
+while (there is a measure in growing_measurements) is (yes)
+    note left
+        See Note 1.
+    end note
+    :print "measure";
+endwhile
+->no;
+
+stop
+@enduml
